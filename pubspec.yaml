@@ -1,7 +1,7 @@
 name: twinkling_stars
 description: "A customizable twinkling star background for Flutter apps, supporting multi-color and multiple shapes."
 version: 1.0.0
-homepage: https://github.com/catminifah/twinkling_stars.git
+homepage: https://github.com/catminifah/twinkling_stars
 repository: https://github.com/catminifah/twinkling_stars
 issue_tracker: https://github.com/catminifah/twinkling_stars/issues
 
