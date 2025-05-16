@@ -13,30 +13,24 @@ Add the package to your `pubspec.yaml` dependencies:
 dependencies:
   twinkling_stars: ^1.0.0
 Then run:
+```
 
-bash
-Copy
-Edit
-flutter pub get
-⚙️ Features
-Customizable number of stars (starCount)
+# ⚙️ Features
 
-Option to include big stars (includeBigStars)
+- Customizable number of stars (`starCount`)
+- Option to include big stars (`includeBigStars`)
+- Supports multiple star colors (`starColors`)
+- Supports multiple star shapes (`starShapes`)
+- Can be used with multiple widgets/screens independently
+- Allows a child widget to be placed over the star background
 
-Supports multiple star colors (starColors)
+---
 
-Supports multiple star shapes (starShapes)
+# 🚀 Usage
 
-Can be used with multiple widgets/screens independently
+Wrap your widget with `TwinklingStarsBackground`:
 
-Allows a child widget to be placed over the star background
-
-🚀 Usage
-Wrap your widget with TwinklingStarsBackground:
-
-dart
-Copy
-Edit
+```dart
 TwinklingStarsBackground(
   starCount: 150,
   includeBigStars: true,
@@ -70,19 +64,3 @@ TwinklingStarsBackground(
     ),
   ),
 )
-📚 Properties
-Property	Type	Description
-starCount	int	Total number of stars to display
-includeBigStars	bool	Whether to include some larger stars
-starColors	List<Color>	List of colors used randomly for the stars
-starShapes	List<StarShape>	List of star shapes used randomly for the stars
-child	Widget	Widget displayed on top of the star background
-
-📸 Preview
-
-📂 Example
-See the full example in the example/main.dart file.
-
-📦 License
-MIT License
-© 2025 catminifah
