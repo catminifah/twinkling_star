@@ -83,7 +83,7 @@ TwinklingStarsBackground(
 
 # 📸 Preview
 
-*(Add preview image here)*
+![Twinkling Stars](https://files.catbox.moe/ejo0rp.gif)
 
 ---
 
