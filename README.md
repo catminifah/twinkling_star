@@ -12,7 +12,10 @@ Add the package to your `pubspec.yaml` dependencies:
 ```yaml
 dependencies:
   twinkling_stars: ^1.0.0
+```
 Then run:
+```bash
+flutter pub get
 ```
 
 # ⚙️ Features
