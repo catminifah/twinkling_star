@@ -64,3 +64,33 @@ TwinklingStarsBackground(
     ),
   ),
 )
+```
+
+# 📚 Properties
+
+| Property        | Type            | Description                                   |
+|-----------------|-----------------|----------------------------------------------|
+| starCount       | int             | Total number of stars to display              |
+| includeBigStars | bool            | Whether to include some larger stars          |
+| starColors      | List<Color>     | List of colors used randomly for the stars    |
+| starShapes      | List<StarShape> | List of star shapes used randomly for the stars |
+| child           | Widget          | Widget displayed on top of the star background |
+
+---
+
+# 📸 Preview
+
+*(Add preview image here)*
+
+---
+
+# 📂 Example
+
+See the full example in the `example/main.dart` file.
+
+---
+
+# 📦 License
+
+MIT License  
+© 2025 catminifah
