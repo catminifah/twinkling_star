@@ -91,13 +91,3 @@ TwinklingStarsBackground(
 
 See the full example in the `example/main.dart` file.
 
-<<<<<<< HEAD
----
-
-# 📦 License
-
-MIT License  
-© 2025 catminifah
-=======
----
->>>>>>> cec3815 (edit StarShape)
