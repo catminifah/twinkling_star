@@ -164,11 +164,7 @@
       "languageVersion": "3.7"
     }
   ],
-<<<<<<< HEAD
-  "generated": "2025-05-16T07:54:22.142790Z",
-=======
-  "generated": "2025-05-19T11:00:42.376236Z",
->>>>>>> cec3815 (edit StarShape)
+  "generated": "2025-05-19T11:15:39.149561Z",
   "generator": "pub",
   "generatorVersion": "3.7.2",
   "flutterRoot": "file:///D:/flutter",
