@@ -21,6 +21,7 @@ class Star {
   final StarShape shapeType;
   final bool isBigStar;
   final double twinklePhase;
+  final Color color;
 
   Star(
     this.position,
@@ -31,9 +32,10 @@ class Star {
     this.shapeType,
     this.isBigStar,
     this.twinklePhase,
+    this.color,
   );
 
-  factory Star.random({bool isBigStar = false}) {
+  factory Star.random({bool isBigStar = false, required starColors, required List<StarShape> starShapes}) {
     final random = Random();
 
     return Star(
@@ -42,9 +44,10 @@ class Star {
       random.nextDouble() * 0.5 + 0.3,
       random.nextDouble() * 2 + 1,
       random.nextDouble() * 2 - 1,
-      StarShape.values[random.nextInt(StarShape.values.length)],
+      starShapes[random.nextInt(starShapes.length)],
       isBigStar,
       random.nextDouble() * 2 * pi,
+      starColors[random.nextInt(starColors.length)],
     );
   }
 }

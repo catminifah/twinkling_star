@@ -6,14 +6,16 @@ class TwinklingStarsBackground extends StatefulWidget {
   final Widget child;
   final int starCount;
   final bool includeBigStars;
-  final Color starColor;
+  final List<Color> starColors;
+  final List<StarShape> starShapes;
 
   const TwinklingStarsBackground({
     super.key,
     required this.child,
     this.starCount = 100,
     this.includeBigStars = true,
-    this.starColor = Colors.white, required List<Color> starColors, required List<StarShape> starShapes,
+    this.starColors = const [Colors.white],
+    this.starShapes = const [StarShape.fivePoint],
   });
 
   @override
@@ -34,7 +36,11 @@ class _TwinklingStarsBackgroundState extends State<TwinklingStarsBackground>
 
     _stars = List.generate(widget.starCount, (index) {
       final isBig = widget.includeBigStars && (index < widget.starCount * 0.1);
-      return Star.random(isBigStar: isBig);
+      return Star.random(
+        isBigStar: isBig,
+        starColors: widget.starColors,
+        starShapes: widget.starShapes,
+      );
     });
   }
 
@@ -58,7 +64,7 @@ class _TwinklingStarsBackgroundState extends State<TwinklingStarsBackground>
               painter: TwinklingStarPainter(
                 _stars,
                 _controller.value,
-                widget.starColor,
+                widget.starColors.first,
               ),
             );
           },

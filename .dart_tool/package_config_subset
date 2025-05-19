@@ -104,6 +104,11 @@ file:///D:/flutter/packages/flutter_test/
 file:///D:/flutter/packages/flutter_test/lib/
 twinkling_stars
 3.7
+<<<<<<< HEAD
 file:///D:/pjflutter/twinkling_stars/
 file:///D:/pjflutter/twinkling_stars/lib/
+=======
+file:///D:/pjflutter/twinkling_star/
+file:///D:/pjflutter/twinkling_star/lib/
+>>>>>>> cec3815 (edit StarShape)
 2
