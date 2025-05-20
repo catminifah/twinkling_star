@@ -91,3 +91,5 @@ TwinklingStarsBackground(
 
 See the full example in the `example/main.dart` file.
 
+---
+

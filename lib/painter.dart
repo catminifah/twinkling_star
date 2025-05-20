@@ -7,9 +7,8 @@ import 'star_path.dart';
 class TwinklingStarPainter extends CustomPainter {
   final List<Star> stars;
   final double animationValue;
-  final Color starColor;
 
-  TwinklingStarPainter(this.stars, this.animationValue, this.starColor);
+  TwinklingStarPainter(this.stars, this.animationValue);
 
   @override
   void paint(Canvas canvas, Size size) {
@@ -25,14 +24,14 @@ class TwinklingStarPainter extends CustomPainter {
           .clamp(0, 1);
 
       final Paint paint = Paint()
-        ..color = starColor.withOpacity(opacity)
+        ..color = star.color.withOpacity(opacity)
         ..style = PaintingStyle.fill;
 
       final double rotationAngle = animationValue * 2 * pi * star.rotationSpeed;
 
       if (star.isBigStar) {
         final glowPaint = Paint()
-          ..color = starColor.withOpacity(opacity * 0.4)
+          ..color = star.color.withOpacity(opacity * 0.4)
           ..maskFilter = MaskFilter.blur(BlurStyle.normal, 8);
         final glowPath = createStarPath(position, radius * 2.5, star.shapeType, rotationAngle);
         canvas.drawPath(glowPath, glowPaint);

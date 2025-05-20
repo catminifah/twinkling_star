@@ -63,8 +63,7 @@ class _TwinklingStarsBackgroundState extends State<TwinklingStarsBackground>
               size: size,
               painter: TwinklingStarPainter(
                 _stars,
-                _controller.value,
-                widget.starColors.first,
+                _controller.value
               ),
             );
           },
