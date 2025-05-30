@@ -8,6 +8,7 @@ class TwinklingStarsBackground extends StatefulWidget {
   final bool includeBigStars;
   final List<Color> starColors;
   final List<StarShape> starShapes;
+  final double sizeMultiplier;
 
   const TwinklingStarsBackground({
     super.key,
@@ -16,6 +17,7 @@ class TwinklingStarsBackground extends StatefulWidget {
     this.includeBigStars = true,
     this.starColors = const [Colors.white],
     this.starShapes = const [StarShape.fivePoint],
+    this.sizeMultiplier = 1,
   });
 
   @override
@@ -40,6 +42,7 @@ class _TwinklingStarsBackgroundState extends State<TwinklingStarsBackground>
         isBigStar: isBig,
         starColors: widget.starColors,
         starShapes: widget.starShapes,
+        sizeMultiplier: widget.sizeMultiplier,
       );
     });
   }

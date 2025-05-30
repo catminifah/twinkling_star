@@ -35,12 +35,12 @@ class Star {
     this.color,
   );
 
-  factory Star.random({bool isBigStar = false, required starColors, required List<StarShape> starShapes}) {
+  factory Star.random({bool isBigStar = false, required starColors, required List<StarShape> starShapes, double sizeMultiplier = 1}) {
     final random = Random();
 
     return Star(
       Offset(random.nextDouble(), random.nextDouble()),
-      isBigStar ? (random.nextDouble() * 4 + 3) : (random.nextDouble() * 2 + 0.5),
+      (isBigStar ? (random.nextDouble() * 4 + 3) : (random.nextDouble() * 2 + 0.5)) * sizeMultiplier,
       random.nextDouble() * 0.5 + 0.3,
       random.nextDouble() * 2 + 1,
       random.nextDouble() * 2 - 1,
