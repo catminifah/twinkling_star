@@ -11,7 +11,7 @@ Add the package to your `pubspec.yaml` dependencies:
 
 ```yaml
 dependencies:
-  twinkling_stars: ^1.0.0
+  twinkling_stars: ^1.0.3
 ```
 Then run:
 ```bash
@@ -24,6 +24,7 @@ flutter pub get
 - Option to include big stars (`includeBigStars`)
 - Supports multiple star colors (`starColors`)
 - Supports multiple star shapes (`starShapes`)
+- Custom star size multiplier (`sizeMultiplier`)
 - Can be used with multiple widgets/screens independently
 - Allows a child widget to be placed over the star background
 
@@ -37,6 +38,7 @@ Wrap your widget with `TwinklingStarsBackground`:
 TwinklingStarsBackground(
   starCount: 150,
   includeBigStars: true,
+  sizeMultiplier: 1.5,
   starColors: [
     Colors.white,
     Colors.lightBlueAccent,
@@ -77,6 +79,7 @@ TwinklingStarsBackground(
 | includeBigStars | bool            | Whether to include some larger stars          |
 | starColors      | List<Color>     | List of colors used randomly for the stars    |
 | starShapes      | List<StarShape> | List of star shapes used randomly for the stars |
+| sizeMultiplier  | double          | Multiplies the base size of all stars (default: 1.0) |
 | child           | Widget          | Widget displayed on top of the star background |
 
 ---
